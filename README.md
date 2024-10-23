@@ -40,4 +40,20 @@ python scripts/sampling/simple_video_sample_4d.py --input_path assets/sv4d_video
 
 - **Low VRAM environment** : To run on GPUs with low VRAM, try setting `--encoding_t=1` (of frames encoded at a time) and `--decoding_t=1` (of frames decoded at a time) or lower video resolution like `--img_size=512`.
 
-assets
+
+<table>
+  <tr>
+    <td>
+      <video width="320" height="240" controls>
+        <source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_original_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+    <td>
+      <video width="320" height="240" controls>
+        <source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_edited_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </td>
+  </tr>
+</table>
