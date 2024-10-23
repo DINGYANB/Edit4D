@@ -40,6 +40,12 @@ python scripts/sampling/simple_video_sample_4d.py --input_path assets/sv4d_video
 
 - **Low VRAM environment** : To run on GPUs with low VRAM, try setting `--encoding_t=1` (of frames encoded at a time) and `--decoding_t=1` (of frames decoded at a time) or lower video resolution like `--img_size=512`.
 
-![Original Video](https://github.com/DINGYANB/Edit4D/raw/main/assets/000000_original_video.gif)
-![Edited Video](https://github.com/DINGYANB/Edit4D/raw/main/assets/000000_edited_video.gif)
+
+<div style="display: flex; justify-content: space-between;">
+
+<img src="https://github.com/DINGYANB/Edit4D/raw/main/assets/000000_original_video.gif" alt="Original Video" width="48%">
+<img src="https://github.com/DINGYANB/Edit4D/raw/main/assets/000000_edited_video.gif" alt="Edited Video" width="48%">
+
+</div>
+
 
