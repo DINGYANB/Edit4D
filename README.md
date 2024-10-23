@@ -42,17 +42,14 @@ python scripts/sampling/simple_video_sample_4d.py --input_path assets/sv4d_video
 
 
 
-<div style="display: flex; justify-content: space-between;">
-  <div>
-    <video width="320" height="240" controls>
-      <source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_original_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div>
-    <video width="320" height="240" controls>
-      <source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_edited_video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
+```HTML
+<video width:60% height:auto controls>
+<source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_original_video.mp4" type="video/mp4">
+</video>
+```
+
+```HTML
+<video width:60% height:auto controls>
+<source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_edited_video.mp4" type="video/mp4">
+</video>
+```
