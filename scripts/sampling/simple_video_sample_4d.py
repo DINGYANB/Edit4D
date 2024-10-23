@@ -402,7 +402,7 @@ def sample(
     )  # subsample (V+1=)9 (uniform) views from 21 SV3D views
 
     sv4d_model_config = "scripts/sampling/configs/sv4d.yaml"
-    base_count = len(glob(os.path.join(output_folder, "*.mp4"))) // 13
+    base_count = len(glob(os.path.join(output_folder, "*.mp4"))) // 14
     version_dict = {
         "T": T * V,
         "H": H,

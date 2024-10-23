@@ -348,7 +348,7 @@ def preprocess_video(input_path, remove_bg, output_folder, n_frames=21, W=576, H
         
         images_v0.append(image)
     
-    base_count = len(glob(os.path.join(output_folder, "*.mp4"))) // 12
+    base_count = len(glob(os.path.join(output_folder, "*.mp4"))) // 14
     processed_file = os.path.join(output_folder, f"{base_count:06d}_process_input.mp4")
     imageio.mimwrite(processed_file, images_v0, fps=10)
     print(f"Preprocessed video saved to {processed_file}")

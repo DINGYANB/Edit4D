@@ -40,4 +40,4 @@ python scripts/sampling/simple_video_sample_4d.py --input_path assets/sv4d_video
 
 - **Low VRAM environment** : To run on GPUs with low VRAM, try setting `--encoding_t=1` (of frames encoded at a time) and `--decoding_t=1` (of frames decoded at a time) or lower video resolution like `--img_size=512`.
 
-
+assets
