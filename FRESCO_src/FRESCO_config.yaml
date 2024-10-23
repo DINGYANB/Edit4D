@@ -1,0 +1,19 @@
+# diffusion
+sd_path: '/data1/huggingface/StableDiffusion/stablediffusionapi' 
+use_controlnet: True
+controlnet_type: 'hed'  # 'depth', 'canny'
+cond_scale: 1.0
+use_freeu: False
+
+# video-to-video translation 
+batch_size: 8
+num_inference_steps: 20
+num_warmup_steps: 3
+end_opt_step: 15
+run_ebsynth: False
+max_process: 4
+
+# supporting model
+gmflow_path: '/data1/Edit4D/model/gmflow_sintel-0c07dcb3.pth'
+sod_path: '/data1/Edit4D/model/epoch_resnet.pth'
+use_salinecy: True
