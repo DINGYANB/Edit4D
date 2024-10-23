@@ -48,4 +48,5 @@ python scripts/sampling/simple_video_sample_4d.py --input_path assets/sv4d_video
 
 </div>
 
+![Edited 4D](https://github.com/DINGYANB/Edit4D/raw/main/assets/000000_diag.gif)
 
