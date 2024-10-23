@@ -42,14 +42,12 @@ python scripts/sampling/simple_video_sample_4d.py --input_path assets/sv4d_video
 
 
 
-```HTML
+
 <video width:60% height:auto controls>
 <source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_original_video.mp4" type="video/mp4">
 </video>
-```
 
-```HTML
+
 <video width:60% height:auto controls>
 <source src="https://github.com/DINGYANB/Edit4D/blob/main/assets/000000_edited_video.mp4" type="video/mp4">
 </video>
-```
