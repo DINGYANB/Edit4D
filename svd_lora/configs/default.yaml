@@ -1,0 +1,59 @@
+# 训练数据及模型配置
+data:
+  base_folder: null  # 训练数据目录
+  num_frames: 25     # 视频帧数
+  width: 1024       # 图像宽度
+  height: 576       # 图像高度
+  num_workers: 8    # 数据加载线程数
+
+model:
+  pretrained_model_name_or_path: /model/stable-video-diffusion-img2vid  # 预训练模型路径
+  revision: null                       # 模型版本号
+  pretrain_unet: null                 # UNet预训练权重
+  rank: 4                            # LoRA秩
+
+# 训练相关配置
+training:
+  seed: null                          # 随机种子
+  num_validation_images: 1            # 验证图像数量
+  validation_steps: 500               # 验证步骤间隔
+  per_gpu_batch_size: 1              # 单GPU批次大小
+  num_train_epochs: 100              # 训练轮数
+  max_train_steps: null              # 最大训练步数
+  gradient_accumulation_steps: 1      # 梯度累积步数
+  gradient_checkpointing: false       # 是否使用梯度检查点
+  
+# 优化器配置
+optimizer:
+  learning_rate: 1e-4                # 学习率
+  scale_lr: false                    # 是否缩放学习率
+  lr_scheduler: "constant"           # 学习率调度器类型
+  lr_warmup_steps: 500              # 学习率预热步数
+  conditioning_dropout_prob: 0.1     # 条件dropout概率
+  use_8bit_adam: false              # 是否使用8位Adam优化器
+  adam_beta1: 0.9                   # Adam beta1参数
+  adam_beta2: 0.999                 # Adam beta2参数
+  adam_weight_decay: 1e-2           # Adam权重衰减
+  adam_epsilon: 1e-8                # Adam epsilon参数
+  max_grad_norm: 1.0                # 最大梯度范数
+
+# 系统配置
+system:
+  allow_tf32: false                  # 是否允许TF32
+  mixed_precision: null              # 混合精度训练 --> "fp16"
+  enable_xformers_memory_efficient_attention: false  # 是否启用xformers
+
+# 输出和日志配置
+output:
+  output_dir: "./outputs"            # 输出目录
+  logging_dir: "logs"               # 日志目录
+  report_to: "tensorboard"          # 报告工具
+  checkpointing_steps: 500          # 检查点保存步数
+  checkpoints_total_limit: 2        # 检查点数量限制
+  resume_from_checkpoint: null      # 恢复检查点路径
+
+# Hugging Face Hub配置
+hub:
+  push_to_hub: false                # 是否推送到hub
+  hub_token: null                   # hub token
+  hub_model_id: null                # hub模型ID
