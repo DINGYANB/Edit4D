@@ -3,9 +3,22 @@ __pycache__/
 *.py[cod]
 *$py.class
 ._*
-# Mac OS specific files
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Mac OS
 ._*
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# 明确指定要忽略的特定文件
+**/.__init__.py
+**/__pycache__
+
 # C extensions
 *.so
 
